@@ -317,6 +317,11 @@ body {
 /* How It Works Section */
 .how-it-works {
   padding: 4rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .how-it-works h2 {
   font-family: var(--font-head);
@@ -330,6 +335,8 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .step {
   background: #181e2f;
@@ -703,6 +710,16 @@ body {
     gap: 1rem;
     text-align: center;
   }
+  .how-it-works {
+    align-items: center;
+    text-align: center;
+  }
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
 @media (max-width: 600px) {
   .container {
@@ -732,6 +749,12 @@ body {
   .footer-content {
     gap: 0.5rem;
     font-size: 0.95rem;
+  }
+  .how-it-works {
+    padding: 2.5rem 0 2rem 0;
+  }
+  .steps {
+    gap: 1rem;
   }
 }
 
