@@ -280,9 +280,19 @@
           </span>
           <span>Chat on WhatsApp</span>
         </a>
-        <div class="contact-details" style="margin-top: 1.5rem; font-size: 1.08rem; line-height: 1.7;">
-          <div><strong>Phone:</strong> <a href="tel:+254768907761" style="color: inherit; text-decoration: underline;">+254768907761</a></div>
-          <div><strong>Email:</strong> <a href="mailto:AI.optima@proton.me" style="color: inherit; text-decoration: underline;">AI.optima@proton.me</a></div>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="vertical-align: middle;"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" fill="#1a1a1a"/></svg>
+            </span>
+            <a href="tel:+254768907761" class="contact-link">+254768907761</a>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="vertical-align: middle;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7l8-5H4l8 5zm8 2.25l-7.12 4.45a2 2 0 01-1.76 0L4 13.25V18h16v-5.75z" fill="#1a1a1a"/></svg>
+            </span>
+            <a href="mailto:AI.optima@proton.me" class="contact-link">AI.optima@proton.me</a>
+          </div>
         </div>
         <style>
           .contact-btn {
@@ -299,6 +309,41 @@
               margin-left: auto;
               margin-right: auto;
             }
+          }
+          .contact-details {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+          }
+          .contact-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-size: 1.08rem;
+            color: #1a1a1a;
+            background: #f6f8fa;
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            width: fit-content;
+            max-width: 100%;
+          }
+          .contact-link {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            word-break: break-all;
+          }
+          .contact-link:hover {
+            color: #0a7cff;
+            text-decoration: underline;
+          }
+          .contact-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         </style>
       </div>
